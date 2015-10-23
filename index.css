@@ -33,7 +33,7 @@ td
 
 tr:nth-child(odd)
 {
-    background: #f0f0f0;
+    background: rgba(43, 69, 124, 0.12);
 }
 
 tr:hover
@@ -51,6 +51,7 @@ th:hover::after
     top: -5000px;
     height: 10000px;
     width: 100%;
+    z-index: -1;
 }
 
 input.city-from
@@ -104,7 +105,7 @@ input:required:invalid ~ [type="submit"]
     visibility: hidden;
 }
 
-input:required:valid + [type="submit"]
+input#email:required:valid + input#phone:required:valid + [type="submit"]
 {
     visibility: visible;
 }
@@ -119,6 +120,17 @@ input.terminal-d:checked ~ article > table > tbody > tr:not(.terminal-d)
 
 input.arrival:checked ~ article > table > tbody > tr:not(.arrival),
 input.departure:checked ~ article > table > tbody > tr.arrival
+{
+    display: none;
+}
+
+.city-from[value="Москва"] ~ div > article > table > tbody > tr:not([class~="moscow"]),
+.city-from[value="Санкт-Петербург"] ~ div > article > table > tbody > tr:not([class~="saint-petersburg"]),
+.city-from[value="Екатеринбург"] ~ div > article > table > tbody > tr:not([class~="ekaterinburg"]),
+.city-from[value="Краснодар"] ~ div > article > table > tbody > tr:not([class~="krasnodar"]),
+.city-from[value="Париж"] ~ div > article > table > tbody > tr:not([class~="paris"]),
+.city-from[value="Баку"] ~ div > article > table > tbody > tr:not([class~="baku"]),
+.city-from[value="Берлин"] ~ div > article > table > tbody > tr:not([class~="berlin"])
 {
     display: none;
 }

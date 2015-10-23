@@ -12,12 +12,11 @@
             </header>
             <!-- Поле для фильтрации по городу -->
             <input class="city-from"
-                type="text"
-                placeholder="Город отправления"
-                value=""
-                onkeyup="this.setAttribute('value', this.value)">
+                   type="text"
+                   placeholder="Город отправления"
+                   value=""
+                   onkeyup="this.setAttribute('value', this.value)">
             <div class="main-data">
-                <label for="terminals_filter"></label>
                 <input id="terminals_filter" name="terminals_filter"
                         type="radio" value="Все терминалы" checked>Все терминалы
                 <input class="terminal-a" name="terminals_filter" type="radio" value="A">A
@@ -25,7 +24,6 @@
                 <input class="terminal-c" name="terminals_filter" type="radio" value="C">C
                 <input class="terminal-d" name="terminals_filter" type="radio" value="D">D
                 <br>
-                <label for="flight_filter"></label>
                 <input class="arrival" id="flight_filter" name="flight_filter" type="radio" value="Прибытие">
                 Прибытие
                 <input class="departure" name="flight_filter" type="radio" value="Отправление">Отправление
@@ -46,7 +44,7 @@
                             <th>Статус рейса</th>
                         </thead>
                         <tbody>
-                            <tr class="terminal-d">
+                            <tr class="terminal-d moscow">
                                 <td><img src="images\departure.png" alt="departure"></td>
                                 <td>4430</td>
                                 <td>AF</td>
@@ -63,7 +61,7 @@
                                 <td>D</td>
                                 <td>Вылетел</td>
                             </tr>
-                            <tr class="terminal-b">
+                            <tr class="terminal-b moscow">
                                 <td><img src="images\departure.png" alt="departure"></td>
                                 <td>4964</td>
                                 <td>AF</td>
@@ -80,7 +78,7 @@
                                 <td>B</td>
                                 <td>Вылетел</td>
                             </tr>
-                            <tr class="terminal-d arrival">
+                            <tr class="terminal-d arrival saint-petersburg">
                                 <td><img src="images\landing.png" alt="landing"></td>
                                 <td>8153</td>
                                 <td>JU</td>
@@ -97,8 +95,8 @@
                                 <td>D</td>
                                 <td>Совершил посадку в <time>23:58</time></td>
                             </tr>
-                            <tr class="terminal-a">
-                                <td><img src="images\departure.png" alt="deparute"></td>
+                            <tr class="terminal-a moscow">
+                                <td><img src="images\departure.png" alt="departure"></td>
                                 <td>2901</td>
                                 <td>KL</td>
                                 <td><img src="images\klm_logo.gif" alt="klm logo"></td>
@@ -114,7 +112,7 @@
                                 <td>A</td>
                                 <td>Вылетел</td>
                             </tr>
-                            <tr class="terminal-c">
+                            <tr class="terminal-c moscow">
                                 <td><img src="images\departure.png" alt="departure"></td>
                                 <td>2942</td>
                                 <td>KL</td>
@@ -131,7 +129,7 @@
                                 <td>C</td>
                                 <td>Вылетел</td>
                             </tr>
-                            <tr class="terminal-a arrival">
+                            <tr class="terminal-a arrival ekaterinburg">
                                 <td><img src="images\landing.png" alt="landing"></td>
                                 <td>3234</td>
                                 <td>KL</td>
@@ -148,7 +146,7 @@
                                 <td>A</td>
                                 <td>Вылетел</td>
                             </tr>
-                            <tr class="terminal-b arrival">
+                            <tr class="terminal-b arrival saint-petersburg">
                                 <td><img src="images\landing.png" alt="landing"></td>
                                 <td>031</td>
                                 <td>SU</td>
@@ -165,7 +163,7 @@
                                 <td>B</td>
                                 <td>Cовершил посадку в <time>23:58</time></td>
                             </tr>
-                            <tr class="terminal-c arrival">
+                            <tr class="terminal-c arrival krasnodar">
                                 <td><img src="images\landing.png" alt="landing"></td>
                                 <td>1112</td>
                                 <td>SU</td>
@@ -182,7 +180,7 @@
                                 <td>C</td>
                                 <td>Вылетел</td>
                             </tr>
-                            <tr class="terminal-c">
+                            <tr class="terminal-c moscow">
                                 <td><img src="images\departure.png" alt="departure"></td>
                                 <td>1408</td>
                                 <td>SU</td>
@@ -199,7 +197,7 @@
                                 <td>C</td>
                                 <td>Вылетел</td>
                             </tr>
-                            <tr class="terminal-a">
+                            <tr class="terminal-a moscow">
                                 <td><img src="images\departure.png" alt="departure"></td>
                                 <td>1424</td>
                                 <td>SU</td>
@@ -216,7 +214,7 @@
                                 <td>A</td>
                                 <td>Вылетел</td>
                             </tr>
-                            <tr class="terminal-a arrival">
+                            <tr class="terminal-a arrival paris">
                                 <td><img src="images\landing.png" alt="landing"></td>
                                 <td>1144</td>
                                 <td>AF</td>
@@ -233,7 +231,7 @@
                                 <td>A</td>
                                 <td>Cовершил посадку в <time>00:08</time></td>
                             </tr>
-                            <tr class="terminal-d">
+                            <tr class="terminal-d moscow">
                                 <td><img src="images\departure.png" alt="departure"></td>
                                 <td>2930</td>
                                 <td>KL</td>
@@ -250,7 +248,7 @@
                                 <td>D</td>
                                 <td>Вылетел</td>
                             </tr>
-                            <tr class="terminal-b arrival">
+                            <tr class="terminal-b arrival baku">
                                 <td><img src="images\landing.png" alt="'landing"></td>
                                 <td>1852</td>
                                 <td>SU</td>
@@ -267,7 +265,7 @@
                                 <td>B</td>
                                 <td>Вылетел</td>
                             </tr>
-                            <tr class="terminal-c">
+                            <tr class="terminal-c moscow">
                                 <td><img src="images\departure.png" alt="departure"></td>
                                 <td>W1832</td>
                                 <td>SU</td>
@@ -284,7 +282,7 @@
                                 <td>C</td>
                                 <td>Задержан до <time>00:45</time></td>
                             </tr>
-                            <tr class="terminal-d arrival">
+                            <tr class="terminal-d arrival berlin">
                                 <td><img src="images\landing.png" alt="departure"></td>
                                 <td>2317</td>
                                 <td>SU</td>
