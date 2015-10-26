@@ -54,7 +54,7 @@ th:hover::after
     z-index: -1;
 }
 
-input.city-from
+.city-from
 {
     display: block;
     margin: 0 auto;
@@ -71,12 +71,12 @@ figure.send-data
 }
 
 .send-data input,
-div.main-data input
+.main-data input
 {
     margin: 5px;
 }
 
-div.main-data
+.main-data
 {
     border: 1px solid #d3d3d3;
     display: block;
@@ -88,16 +88,12 @@ div.main-data
 
 input:required:valid
 {
-    background-image: url(images/valid.png);
-    background-position: right top;
-    background-repeat: no-repeat;
+    background: url("images/valid.png") no-repeat right top;
 }
 
 input:required:invalid
 {
-    background-image: url(images/invalid.png);
-    background-position: right top;
-    background-repeat: no-repeat;
+    background: url("images/invalid.png") no-repeat right top;
 }
 
 input:required:invalid ~ [type="submit"]
@@ -105,32 +101,32 @@ input:required:invalid ~ [type="submit"]
     visibility: hidden;
 }
 
-input#email:required:valid + input#phone:required:valid + [type="submit"]
+input#email:valid + input#phone:valid + [type="submit"]
 {
     visibility: visible;
 }
 
-input.terminal-a:checked ~ article > table > tbody > tr:not(.terminal-a),
-input.terminal-b:checked ~ article > table > tbody > tr:not(.terminal-b),
-input.terminal-c:checked ~ article > table > tbody > tr:not(.terminal-c),
-input.terminal-d:checked ~ article > table > tbody > tr:not(.terminal-d)
+.terminal-a:checked ~ article tbody > tr:not(.terminal-a),
+.terminal-b:checked ~ article tbody > tr:not(.terminal-b),
+.terminal-c:checked ~ article tbody > tr:not(.terminal-c),
+.terminal-d:checked ~ article tbody > tr:not(.terminal-d)
 {
     display: none;
 }
 
-input.arrival:checked ~ article > table > tbody > tr:not(.arrival),
-input.departure:checked ~ article > table > tbody > tr.arrival
+.arrival:checked ~ article tbody > tr:not(.arrival),
+.departure:checked ~ article tbody > tr.arrival
 {
     display: none;
 }
 
-.city-from[value="Москва"] ~ div > article > table > tbody > tr:not([class~="moscow"]),
-.city-from[value="Санкт-Петербург"] ~ div > article > table > tbody > tr:not([class~="saint-petersburg"]),
-.city-from[value="Екатеринбург"] ~ div > article > table > tbody > tr:not([class~="ekaterinburg"]),
-.city-from[value="Краснодар"] ~ div > article > table > tbody > tr:not([class~="krasnodar"]),
-.city-from[value="Париж"] ~ div > article > table > tbody > tr:not([class~="paris"]),
-.city-from[value="Баку"] ~ div > article > table > tbody > tr:not([class~="baku"]),
-.city-from[value="Берлин"] ~ div > article > table > tbody > tr:not([class~="berlin"])
+.city-from[value="Москва"] ~ div tbody > tr:not([class~="moscow"]),
+.city-from[value="Санкт-Петербург"] ~ div tbody > tr:not([class~="saint-petersburg"]),
+.city-from[value="Екатеринбург"] ~ div tbody > tr:not([class~="ekaterinburg"]),
+.city-from[value="Краснодар"] ~ div tbody > tr:not([class~="krasnodar"]),
+.city-from[value="Париж"] ~ div tbody > tr:not([class~="paris"]),
+.city-from[value="Баку"] ~ div tbody > tr:not([class~="baku"]),
+.city-from[value="Берлин"] ~ div tbody > tr:not([class~="berlin"])
 {
     display: none;
 }
